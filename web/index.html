@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Clothes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h3>Add Clothes</h3>
+    <form action="MonZa" method="post">
+        <label for="name">ชื่อผู้ซื้อ:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">อีเมล:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="clothesType">ประเภทเสื้อผ้า:</label>
+        <select id="clothesType" name=" shirt</option>
+            <option value="Short sleeve shirt">Short sleeve shirt</option>
+            <option value="trousers">Trousers</option>
+            <option value="clothesType" >clothesType</option
+            <option value="long-sleeved shirt">Long-sleevedshorts</option>
+            <option value="coat">Coat</option>
+        </select>
+
+        <label for="clothesColor">สีเสื้อผ้า:</label>
+        <select id="clothesColor" name="clothesColor" required>
+            <option value="White">White</option>
+            <option value="Orange">Orange</option>
+            <option value="Gray">Gray</option>
+            <option value="Cream">Cream</option>
+            <option value="Black">Black</option>
+        </select>
+
+        <fieldset>
+            <legend>การเลือกซื้อ:</legend>
+            <input type="radio" id="cash" name="paymentType" value="cash" required>
+            <label for="cash">สด</label>
+            <input type="radio" id="credit" name="paymentType" value="credit">
+            <label for="credit">ผ่อนชำระ</label>
+        </fieldset>
+
+        <label for="clothesPrice">ราคา:</label>
+        <input type="text" id="clothesPrice" name="clothesPrice" required>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
